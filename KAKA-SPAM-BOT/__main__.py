@@ -1,11 +1,11 @@
-#RiZoeLXSpam By @TheRiZoeL
+#KAKA-SPAM-BOT By @K_A_k_A_03
 
 import asyncio
 import sys
 from sys import argv
 import glob
 from pathlib import Path
-from RiZoeLXSpam.utils import load_plugins
+from KAKA-SPAM-BOT.utils import load_plugins
 import logging
 from telethon import events
 from . import Riz, Riz2, Riz3, Riz4, Riz5, Riz6, Riz7, Riz8, Riz9, Riz10
@@ -14,7 +14,7 @@ logging.basicConfig(format='[%(levelname) 5s/%(asctime)s] %(name)s: %(message)s'
                     level=logging.WARNING)
 
 
-path = "RiZoeLXSpam/plugins/*.py"
+path = "KAKA-SPAM-BOT/plugins/*.py"
 files = glob.glob(path)
 for name in files:
     with open(name) as a:
@@ -22,8 +22,8 @@ for name in files:
         plugin_name = patt.stem
         load_plugins(plugin_name.replace(".py", ""))
 
-print("RiZoeL Bot Spam Successfully deployed -!")
-print("Enjoy! Do visit @RiZoeLX")
+print("Kᴀᴋᴀ-ꜱᴘᴀᴍ-ʙᴏT Sᴜᴄᴄᴇꜱꜱꜰᴜʟʟʏ ᴅᴇᴘʟᴏʏᴇD -!")
+print("Eɴᴊᴏʏ! ᴅᴏ ᴠɪꜱɪT! @marrkmusic")
 
 if __name__ == "__main__":
     Riz.run_until_disconnected()
