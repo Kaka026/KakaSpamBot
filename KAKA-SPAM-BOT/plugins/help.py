@@ -1,13 +1,13 @@
-from RiZoeLXSpam import Riz, Riz2, Riz3, Riz4, Riz5, Riz6, Riz7, Riz8, Riz9, Riz10, SUDO_USERS
+from KAKA-SPAM-BOT import Riz, Riz2, Riz3, Riz4, Riz5, Riz6, Riz7, Riz8, Riz9, Riz10, SUDO_USERS
 from telethon import events, Button
 from telethon.tl.custom import button
 from time import time
 from datetime import datetime
-from RiZoeLXSpam import CMD_HNDLR as hl
+from KAKA-SPAM-BOT import CMD_HNDLR as hl
     
-HELP_PIC = "https://telegra.ph/file/9acc785291052c8f8998d.jpg"
+HELP_PIC = "https://te.legra.ph/file/c920529b4a15d2d866512.jpg"
 
-Riz_Help = "__Click On Below Buttons for help__"
+KAKA_Help = "__Click On Below Buttons for help__"
 
 
 @Riz.on(events.NewMessage(incoming=True, pattern=r"\%shelp(?: |$)(.*)" % hl))
@@ -24,7 +24,7 @@ async def help(event):
     if event.sender_id in SUDO_USERS:
        await event.client.send_file(event.chat_id,
                                   HELP_PIC,
-                                  caption=Riz_Help,
+                                  caption=KAKA_Help,
                                   buttons=[
            [
             Button.inline("• Spam •", data="spam"),
@@ -34,7 +34,7 @@ async def help(event):
             Button.inline("• Extra •", data="extra"),
            ],
            [    
-            Button.url("ᴄʜᴀɴɴᴇʟ", "https://t.me/RiZoeLX")
+            Button.url("ᴄʜᴀɴɴᴇʟ", "https://t.me/marrkchannel")
            ],
            ],
            )              
@@ -64,7 +64,7 @@ ii) {hl}leave : Type in the Group bot will auto leave that group
 **Packspam**: Sticker Pack Spam
 i) {hl}packspam (replying to any sticker)
 
-**© @RiZoeLX**
+**© @marrkchannel**
 """
 
                  
@@ -93,7 +93,7 @@ i) {hl}dreplyraid <replying to user>
 ii) {hl}dreplyraid <username>
 
 
-**© @RiZoeLX**
+**© @marrkchannel**
 """
 
 spam_msg = f"""
@@ -122,7 +122,7 @@ i) {hl}pornspam <count>
 command:
 i) {hl}hang <counter> (you can reply any message if you want bot to reply that message and do spamming)
 
-** © @RiZoeLX**
+** © @marrkchannel**
 """                     
            
            
@@ -139,7 +139,7 @@ i) {hl}hang <counter> (you can reply any message if you want bot to reply that m
 async def helpback(event):
    if event.query.user_id in SUDO_USERS:    
       await event.edit(
-            Riz_Help,
+            KAKA_Help,
             buttons=[
                 [
             Button.inline("Spam", data="spam"),
@@ -149,13 +149,13 @@ async def helpback(event):
             Button.inline("Extra cmds", data="extra"),
            ],
            [    
-            Button.url("ᴄʜᴀɴɴᴇʟ", "https://t.me/RiZoeLX")
+            Button.url("ᴄʜᴀɴɴᴇʟ", "https://t.me/marrkchannel")
            ],
            ],
         )           
    else:
         Alert = (
-                "Noob !! Make Your Own RiZoeL X Spam Bots !!"
+                "Noob !! Make Your Own KAKA SPAM  BOTS !!"
             )
         await event.answer(Alert, cache_time=0, alert=True)
       
@@ -183,7 +183,7 @@ async def help_spam(event):
             ) 
    else:
         Alert = (
-                "Noob !! Make Your Own RiZoeL X Spam Bots !!"
+                "Noob !! Make Your Own KAKA SPAM BOTS !!"
             )
         await event.answer(Alert, cache_time=0, alert=True)
                  
@@ -210,7 +210,7 @@ async def help_raid(event):
             )  
      else:
         Alert = (
-                "Noob !! Make Your Own RiZoeL X Spam Bots !!"
+                "Noob !! Make Your Own KAKA SPAM BOTS !!"
             )
         await event.answer(Alert, cache_time=0, alert=True)
        
@@ -238,7 +238,7 @@ async def help_extra(event):
             )
    else:
         Alert = (
-                "Noob !! Make Your Own RiZoeL X Spam Bots !!"
+                "Noob !! Make Your Own KAKA SPAM BOTS !!"
             )
         await event.answer(Alert, cache_time=0, alert=True)
 
