@@ -10,9 +10,9 @@
 [![Open Source Love svg2](https://badges.frapsoft.com/os/v2/open-source.svg?v=103)](https://github.com/Kaka026/KakaSpamBot)   
 ----
  
-- [x] ☯︎ ғᴀsᴛ ᴀɴᴅ sᴛᴀʙʟᴇ ☯︎
-- [x] Deploy 10 Bots in One time 🔥
-- [x] Deploy Using Bot Token 
+- [»] • ғᴀsᴛ ᴀɴᴅ sᴛᴀʙʟᴇ •
+- [»] Deploy 10 Bots in One time 😈
+- [»] Deploy Using Bot Token 🤧🍃
 
 # Deploy on heroku
 
