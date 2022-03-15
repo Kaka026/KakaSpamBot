@@ -3,23 +3,23 @@ import asyncio
 import sys
 import git
 import heroku3
-from RiZoeLXSpam import Riz, Riz2, Riz3, Riz4, Riz5 , Riz6, Riz7, Riz8, Riz9, Riz10, OWNER_ID, SUDO_USERS, HEROKU_APP_NAME, HEROKU_API_KEY, rizoelversion
-from RiZoeLXSpam import CMD_HNDLR as hl
+from KAKA-SPAM-BOT import Riz, Riz2, Riz3, Riz4, Riz5 , Riz6, Riz7, Riz8, Riz9, Riz10, OWNER_ID, SUDO_USERS, HEROKU_APP_NAME, HEROKU_API_KEY, rizoelversion
+from KAKA-SPAM-BOT import CMD_HNDLR as hl
 from telethon.tl.functions.users import GetFullUserRequest
-from RiZoeLXSpam import ALIVE_PIC
+from KAKA-SPAM-BOT import ALIVE_PIC
 from telethon import events, version, Button
 from telethon.tl.custom import button
 from time import time
 from datetime import datetime
 
-RIZ_PIC = ALIVE_PIC if ALIVE_PIC else "https://telegra.ph/file/ba87c58f01a6fcb5ef512.jpg"
+KAKA_PIC = ALIVE_PIC if ALIVE_PIC else "https://te.legra.ph/file/90e8146c356459a0db464.jpg"
   
 
-rizoel = "✯ 𝗥𝗶𝗭𝗼𝗲𝗟𝗫𝗦𝗽𝗮𝗺 𝗛𝗲𝗿𝗲 ✯\n\n"
+rizoel = "♠|ᴋᴀᴋᴀ ꜱᴘᴀᴍ ʙᴏᴛꜱ|♠\n\n"
 rizoel += f"═══════════════════\n"
-rizoel += f"• **ᴘʏᴛʜᴏɴ ᴠᴇʀsɪᴏɴ** : `3.9.6`\n"
-rizoel += f"• **ᴛᴇʟᴇᴛʜᴏɴ ᴠᴇʀsɪᴏɴ** : `{version.__version__}`\n"
-rizoel += f"• **ʀɪᴢᴏᴇʟXsᴘᴀᴍ ᴠᴇʀsɪᴏɴ**  : `{rizoelversion}`\n"
+rizoel += f"• ᴘʏᴛʜᴏɴ ᴠᴇʀsɪᴏɴ : 3.9.6\n"
+rizoel += f"• ᴛᴇʟᴇᴛʜᴏɴ ᴠᴇʀsɪᴏɴ : {version.version}\n"
+rizoel += f"• ᴋᴀᴋᴀ ꜱᴘᴀᴍ ʙᴏᴛꜱ ᴠᴇʀsɪᴏɴ  : {rizoelversion}\n"
 rizoel += f"═══════════════════\n\n"   
 
                                   
@@ -36,15 +36,15 @@ rizoel += f"═══════════════════\n\n"
 async def alive(event):
   if event.sender_id in SUDO_USERS:
      await event.client.send_file(event.chat_id,
-                                  RIZ_PIC,
+                                  KAKA_PIC,
                                   caption=rizoel,
                                   buttons=[
         [
-        Button.url("ᴄʜᴀɴɴᴇʟ", "https://t.me/RiZoeLX"),
-        Button.url("sᴜᴘᴘᴏʀᴛ", "https://t.me/DNHxHELL")
+        Button.url("ᴄʜᴀɴɴᴇʟ", "https://t.me/marrkchannel"),
+        Button.url("sᴜᴘᴘᴏʀᴛ", "https://t.me/marrkmusic")
         ],
         [
-        Button.url("• ʀᴇᴘᴏ •", "https://github.com/MrRizoel/SpamBot")
+        Button.url("• ʀᴇᴘᴏ •", "https://github.com/Kaka026/KakaSpamBot")
         ]
         ]
         )
@@ -93,7 +93,7 @@ async def ping(e):
         event = await e.reply(text, parse_mode=None, link_preview=None )
         end = datetime.now()
         ms = (end-start).microseconds / 1000
-        await event.edit(f"▒█▀▀█ ▒█▀▀▀█ ▀▀█▀▀\n▒█▀▀▄ ▒█░░▒█ ░▒█░░\n▒█▄▄█ ▒█▄▄▄█ ░▒█░░\n\nϟ ʀɪᴢᴏᴇʟ X sᴘᴀᴍ ϟ︎ `{ms}` ᴍs")
+        await event.edit(f"▒█▀▀█ ▒█▀▀▀█ ▀▀█▀▀\n▒█▀▀▄ ▒█░░▒█ ░▒█░░\n▒█▄▄█ ▒█▄▄▄█ ░▒█░░\n\n♠|ᴋᴀᴋᴀ ꜱᴘᴀᴍ ʙᴏᴛꜱ|♠ `{ms}` ᴍs")
         
         
 
@@ -109,7 +109,7 @@ async def ping(e):
 @Riz10.on(events.NewMessage(incoming=True, pattern=r"\%srestart(?: |$)(.*)" % hl))
 async def restart(e):
     if e.sender_id in SUDO_USERS:
-        text = "**Restarting Your RiZoeL X Spam**.. Please Wait Until It Starts Again"
+        text = "**Restarting Your ᴋᴀᴋᴀ ꜱᴘᴀᴍ ʙᴏᴛꜱ**.. Please Wait Until It Starts Again"
         await e.reply(text, parse_mode=None, link_preview=None)
         try:
             await Riz.disconnect()
